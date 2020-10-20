@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=365/713=0.5119 R=365/1151=0.3171 F=0.3916
+* Tok-based: P=924/1193=0.7745 R=924/2387=0.3871 F=0.5162
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=546/1151=47% pred=396/713=56%
+* LVC.full: MWE-based: P=241/396=0.6086 R=241/546=0.4414 F=0.5117
+* LVC.full: Tok-based: P=558/710=0.7859 R=558/1103=0.5059 F=0.6156
+* MVC: MWE-proportion: gold=1/1151=0% pred=0/713=0%
+* MVC: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+* MVC: Tok-based: P=0/0=0.0000 R=0/2=0.0000 F=0.0000
+* VID: MWE-proportion: gold=604/1151=52% pred=317/713=44%
+* VID: MWE-based: P=121/317=0.3817 R=121/604=0.2003 F=0.2628
+* VID: Tok-based: P=356/483=0.7371 R=356/1282=0.2777 F=0.4034
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1102/1151=96% pred=703/713=99%
+* Continuous: MWE-based: P=364/703=0.5178 R=364/1102=0.3303 F=0.4033
+* Discontinuous: MWE-proportion: gold=49/1151=4% pred=10/713=1%
+* Discontinuous: MWE-based: P=1/10=0.1000 R=1/49=0.0204 F=0.0339
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1150/1151=100% pred=457/713=64%
+* Multi-token: MWE-based: P=365/457=0.7987 R=365/1150=0.3174 F=0.4543
+* Single-token: MWE-proportion: gold=1/1151=0% pred=256/713=36%
+* Single-token: MWE-based: P=0/256=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=851/1151=74% pred=283/713=40%
+* Seen-in-train: MWE-based: P=233/283=0.8233 R=233/851=0.2738 F=0.4109
+* Unseen-in-train: MWE-proportion: gold=300/1151=26% pred=430/713=60%
+* Unseen-in-train: MWE-based: P=27/430=0.0628 R=27/300=0.0900 F=0.0740
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=494/851=58% pred=164/283=58%
+* Variant-of-train: MWE-based: P=103/164=0.6280 R=103/494=0.2085 F=0.3131
+* Identical-to-train: MWE-proportion: gold=357/851=42% pred=119/283=42%
+* Identical-to-train: MWE-based: P=95/119=0.7983 R=95/357=0.2661 F=0.3992
+

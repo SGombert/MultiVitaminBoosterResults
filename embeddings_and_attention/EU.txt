@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=35/162=0.2160 R=35/2020=0.0173 F=0.0321
+* Tok-based: P=134/208=0.6442 R=134/4094=0.0327 F=0.0623
+
+## Per-category evaluation (partition of Global)
+* LVC.cause: MWE-proportion: gold=106/2020=5% pred=2/162=1%
+* LVC.cause: MWE-based: P=2/2=1.0000 R=2/106=0.0189 F=0.0370
+* LVC.cause: Tok-based: P=4/4=1.0000 R=4/212=0.0189 F=0.0370
+* LVC.full: MWE-proportion: gold=1508/2020=75% pred=151/162=93%
+* LVC.full: MWE-based: P=29/151=0.1921 R=29/1508=0.0192 F=0.0350
+* LVC.full: Tok-based: P=116/191=0.6073 R=116/3029=0.0383 F=0.0720
+* VID: MWE-proportion: gold=406/2020=20% pred=9/162=6%
+* VID: MWE-based: P=4/9=0.4444 R=4/406=0.0099 F=0.0193
+* VID: Tok-based: P=9/13=0.6923 R=9/853=0.0106 F=0.0208
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1606/2020=80% pred=160/162=99%
+* Continuous: MWE-based: P=35/160=0.2188 R=35/1606=0.0218 F=0.0396
+* Discontinuous: MWE-proportion: gold=414/2020=20% pred=2/162=1%
+* Discontinuous: MWE-based: P=0/2=0.0000 R=0/414=0.0000 F=0.0000
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=2020/2020=100% pred=43/162=27%
+* Multi-token: MWE-based: P=35/43=0.8140 R=35/2020=0.0173 F=0.0339
+* Single-token: MWE-proportion: gold=0/2020=0% pred=119/162=73%
+* Single-token: MWE-based: P=0/119=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=1720/2020=85% pred=34/162=21%
+* Seen-in-train: MWE-based: P=34/34=1.0000 R=34/1720=0.0198 F=0.0388
+* Unseen-in-train: MWE-proportion: gold=300/2020=15% pred=128/162=79%
+* Unseen-in-train: MWE-based: P=1/128=0.0078 R=1/300=0.0033 F=0.0047
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=830/1720=48% pred=0/34=0%
+* Variant-of-train: MWE-based: P=0/0=0.0000 R=0/830=0.0000 F=0.0000
+* Identical-to-train: MWE-proportion: gold=890/1720=52% pred=34/34=100%
+* Identical-to-train: MWE-based: P=34/34=1.0000 R=34/890=0.0382 F=0.0736
+
