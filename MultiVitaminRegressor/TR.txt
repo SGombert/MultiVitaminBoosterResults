@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=616/3028=0.2034 R=616/1151=0.5352 F=0.2948
+* Tok-based: P=1936/5526=0.3503 R=1936/2387=0.8111 F=0.4893
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=546/1151=47% pred=1226/3028=40%
+* LVC.full: MWE-based: P=321/1226=0.2618 R=321/546=0.5879 F=0.3623
+* LVC.full: Tok-based: P=904/2207=0.4096 R=904/1103=0.8196 F=0.5462
+* MVC: MWE-proportion: gold=1/1151=0% pred=0/3028=0%
+* MVC: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+* MVC: Tok-based: P=0/0=0.0000 R=0/2=0.0000 F=0.0000
+* VID: MWE-proportion: gold=604/1151=52% pred=1882/3028=62%
+* VID: MWE-based: P=266/1882=0.1413 R=266/604=0.4404 F=0.2140
+* VID: Tok-based: P=979/3440=0.2846 R=979/1282=0.7637 F=0.4147
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1102/1151=96% pred=2653/3028=88%
+* Continuous: MWE-based: P=608/2653=0.2292 R=608/1102=0.5517 F=0.3238
+* Discontinuous: MWE-proportion: gold=49/1151=4% pred=375/3028=12%
+* Discontinuous: MWE-based: P=8/375=0.0213 R=8/49=0.1633 F=0.0377
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1150/1151=100% pred=1665/3028=55%
+* Multi-token: MWE-based: P=616/1665=0.3700 R=616/1150=0.5357 F=0.4377
+* Single-token: MWE-proportion: gold=1/1151=0% pred=1363/3028=45%
+* Single-token: MWE-based: P=0/1363=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=851/1151=74% pred=426/3028=14%
+* Seen-in-train: MWE-based: P=317/426=0.7441 R=317/851=0.3725 F=0.4965
+* Unseen-in-train: MWE-proportion: gold=300/1151=26% pred=2602/3028=86%
+* Unseen-in-train: MWE-based: P=76/2602=0.0292 R=76/300=0.2533 F=0.0524
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=494/851=58% pred=283/426=66%
+* Variant-of-train: MWE-based: P=162/283=0.5724 R=162/494=0.3279 F=0.4170
+* Identical-to-train: MWE-proportion: gold=357/851=42% pred=143/426=34%
+* Identical-to-train: MWE-based: P=113/143=0.7902 R=113/357=0.3165 F=0.4520
+
